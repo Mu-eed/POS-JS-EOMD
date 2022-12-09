@@ -1,0 +1,58 @@
+body {
+    font-family: 'Zen Dots', cursive;
+}
+
+#home {
+    background-image:url(/assets/dred.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#products {
+    min-height: 100vh;
+    background-image: linear-gradient(
+        40deg,
+        rgb(0, 0, 0),
+        #670505,
+        #000000,
+        #4c0000
+    );
+};
+
+.container {
+    margin: auto;
+}
+
+.product-header {
+    padding: 35px;
+    font-size: 47px;
+}
+
+.head-text {
+    font-size: 76px;
+}
+
+.row.row-cols-1.row-cols-sm-2.row-cols-md-3.g-3 {
+    margin-top: 10px;
+}
+
+#checkout-home {
+    background-image: url(/assets/dred2.jpg);
+    min-height: 100vh;
+    background-size: cover;
+}
+
+#admin-home {
+    background-image: url(/assets/dred-hex.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
