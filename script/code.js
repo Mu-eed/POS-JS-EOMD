@@ -59,3 +59,15 @@ function display(){
     })
 }
 display();
+
+let addBtn = document.querySelectorAll('.addToCart');
+Object.keys(addBtn).forEach((item) => {
+        addBtn[item].addEventListener('click', (e) => {
+            console.log('clicked', addBtn[item])
+            console.log(controllers[item])
+            checkout.push(controllers[item]);
+            console.log(checkout)
+            localStorage.setItem('myCheckout', JSON.stringify(checkout));
+        })
+    }
+)

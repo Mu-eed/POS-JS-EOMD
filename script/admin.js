@@ -46,7 +46,15 @@ controllers.forEach((item) => {
         <td>${item.name}</td>
         <td>${item.price}</td>
         <td><a href="#" class="btn btn-info-edit">Edit</a></td>
-        <td><a href="#" class="btn btn-dark-delete">Delete</a></td>
+        <td><button class="btn btn-dark-delete" id="delete" >Delete</button></td>
       </tr>
      `
 });
+
+// ===== Delete Button =====
+function DeleteRow(index) {
+    localStorage.setItem('cards', JSON.stringify(controllers));
+        document.querySelector('#delete');
+        controllers.splice(index-1, 1)
+        localStorage.setItem('cards', JSON.stringify(controllers));
+    }

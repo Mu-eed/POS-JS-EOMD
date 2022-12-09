@@ -41,6 +41,10 @@ body {
     margin-top: 10px;
 }
 
+.card {
+    width: 40rem;
+}
+
 #checkout-home {
     background-image: url(/assets/dred2.jpg);
     min-height: 100vh;
