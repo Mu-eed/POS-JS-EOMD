@@ -1,6 +1,7 @@
-
-    let controllers = JSON.parse(localStorage.getItem('#cards')) ?
-    JSON.parse(localStorage.getItem('#cards')) : [
+    
+    let controllers = JSON.parse(localStorage.getItem('cards')) ?
+    JSON.parse(localStorage.getItem('cards')) : localStorage.setItem('cards', 
+    JSON.stringify([
         {
             id:1,
             name: "SCUF Impact Cherry Blossom",
@@ -37,11 +38,12 @@
             price: 2725,
             img: "https://i.postimg.cc/fyssSb0j/dsirespct.webp",
         },
-];
+])
+    ) ;
 function display(){
     controllers.forEach((item)=>{
        document.querySelector('#cards').innerHTML +=
-        `<div class="row row-cols-1 row-cols-2 row-cols-sm g-4">
+        `
         <div class="col">
         <div class="card shadow-sm"> 
         <img src="${item.img}">
